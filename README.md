@@ -1,3 +1,24 @@
+
+#Post feed functionality with pagination using mock api
+It is a feed page functionality designed using react Library.
+
+#data
+ data is being used from mock APIs
+
+#funtionality
+Pagination
+feed page
+
+Resact Apis
+Context hook.
+useState
+uuidv4
+
+#Tech Stack Used
+React.js, Javascript,Css, html
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
