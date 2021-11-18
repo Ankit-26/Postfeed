@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import PostList from "./components/PostList";
+import postContext from "./context";
+import React, { useState } from "react";
+import Post from "./components/Post";
 
 function App() {
+  const [postViewData, setpostViewdata] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <postContext.Provider value={{ postViewData, setpostViewdata }}>
+        <PostList />
+      </postContext.Provider>
+
+      {postViewData ? (
+        <div id="postview" className="post_view">
+          <Post post={postViewData} />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

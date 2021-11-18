@@ -1,0 +1,23 @@
+.post_List {
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 0 2em 0;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  align-items: center;
+}
+
+.pageNo {
+  padding: 20px;
+  height: 0.7em;
+  font-size: 2em;
+  background-color: rgb(226, 180, 245);
+  margin: 0 1em;
+  border-radius: 50%;
+  cursor: pointer;
+}
